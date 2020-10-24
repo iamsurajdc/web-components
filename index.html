@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Components Hands-On</title>
     <style>
-        h3 {
-            color: blueviolet;
-        }
+      h3 {
+        color: blueviolet;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h3>Hello Sapiens!</h3>
-    <user-card name="Suraj Chandgude"></user-card>
+    <user-card
+      name="John Doe"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="email">john@gmail.com</div>
+      <div slot="phone">979876785</div>
+    </user-card>
+    <user-card
+      name="Jane Doe"
+      avatar="https://randomuser.me/api/portraits/women/2.jpg"
+    >
+      <div slot="email">jane@gmail.com</div>
+      <div slot="phone">979876785</div>
+    </user-card>
     <script src="useCard.js"></script>
-</body>
+  </body>
 </html>
